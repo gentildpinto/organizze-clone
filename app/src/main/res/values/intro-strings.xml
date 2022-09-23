@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_one_text_1">Organize suas contas\nde onde estiver</string>
+    <string name="intro_one_text_2">Simples, fácil de usar e grátis</string>
+
+    <string name="intro_two_text_1">Saiba para onde está indo seu dinheiro</string>
+    <string name="intro_two_text_2">Categorizando seus lançamentos e vendo o \n destino de cada centavo</string>
+
+    <string name="intro_three_text_1">Nunca mais esqueça de\npagar uma conta</string>
+    <string name="intro_three_text_2">Receba alertas quando quiser</string>
+
+    <string name="intro_four_text_1">Tudo organizado, no\ncelular ou computador</string>
+    <string name="intro_four_text_2">Use no seu smartphone e acessando o\nOrganizze pelo site</string>
+</resources>
