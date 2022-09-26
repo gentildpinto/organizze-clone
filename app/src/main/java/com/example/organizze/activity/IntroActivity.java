@@ -1,4 +1,4 @@
-package com.example.organizze;
+package com.example.organizze.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.organizze.R;
 import com.example.organizze.activity.SignInActivity;
 import com.example.organizze.activity.SignUpActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;

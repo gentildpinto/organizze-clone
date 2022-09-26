@@ -27,7 +27,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".IntroActivity"
+            android:name=".activity.IntroActivity"
             android:exported="true"
             android:theme="@style/Theme.Intro">
             <intent-filter>

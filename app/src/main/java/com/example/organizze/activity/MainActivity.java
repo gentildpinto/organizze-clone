@@ -1,8 +1,10 @@
-package com.example.organizze;
+package com.example.organizze.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.organizze.R;
 
 public class MainActivity extends AppCompatActivity {
 
