@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Organizze</string>
+    <string name="sign_up">Cadastre-se</string>
+    <string name="sign_in">Já tenho conta</string>
+    <string name="create_free_account">Crie sua conta grátis</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="terms">Termos de uso</string>
+    <string name="register">Cadastrar</string>
+    <string name="log_in_to_your_account">Acesse sua conta</string>
+    <string name="login">Entrar</string>
 </resources>

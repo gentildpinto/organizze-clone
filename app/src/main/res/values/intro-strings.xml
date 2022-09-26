@@ -11,4 +11,7 @@
 
     <string name="intro_four_text_1">Tudo organizado, no\ncelular ou computador</string>
     <string name="intro_four_text_2">Use no seu smartphone e acessando o\nOrganizze pelo site</string>
+
+    <string name="intro_auth_text_1">Crie sua conta grátis</string>
+    <string name="intro_auth_text_2">Junte-se a mais de meio milhão\nde pessoas e comece já</string>
 </resources>
