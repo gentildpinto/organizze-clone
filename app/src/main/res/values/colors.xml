@@ -11,4 +11,12 @@
     <color name="colorPrimary">#01C7D2</color>
     <color name="colorPrimaryDark">#00b2bc</color>
     <color name="colorAccent">#ff706a</color>
+
+    <color name="colorPrimaryExpenses">#FF706A</color>
+    <color name="colorPrimaryDarkExpenses">#E66560</color>
+    <color name="colorAccentExpenses">#FF706A</color>
+
+    <color name="colorPrimaryIncomes">#00D39E</color>
+    <color name="colorPrimaryDarkIncomes">#00BE8B</color>
+    <color name="colorAccentIncomes">#00D39E</color>
 </resources>

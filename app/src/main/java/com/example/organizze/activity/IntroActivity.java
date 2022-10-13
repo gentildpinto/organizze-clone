@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.organizze.R;
+import com.example.organizze.config.FirebaseConfig;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 
 import java.util.ArrayList;
@@ -18,7 +21,7 @@ public class IntroActivity extends com.heinrichreimersoftware.materialintro.app.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        skipActivityAfterFirstOpen();
+        checkUser();
 
         setButtonNextVisible(false);
         setButtonBackVisible(false);
@@ -78,6 +81,17 @@ public class IntroActivity extends com.heinrichreimersoftware.materialintro.app.
             SharedPreferences.Editor editor = preferences.edit();
             editor.putBoolean(SHARED_PREFERENCES_FIRST_OPEN_KEY, true);
             editor.apply();
+        }
+    }
+
+    // Checks if exists authenticated user
+    private void checkUser() {
+        FirebaseUser user = FirebaseConfig.GetFirebaseInstance().getCurrentUser();
+        if (user != null) {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        } else {
+            skipActivityAfterFirstOpen();
         }
     }
 }

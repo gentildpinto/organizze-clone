@@ -68,6 +68,8 @@ public class SignInActivity extends AppCompatActivity {
         ).addOnCompleteListener(this, task -> {
             if (task.isSuccessful()) {
                 Toast.makeText(SignInActivity.this, "Logado com sucesso!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, MainActivity.class));
+                finish();
             } else {
                 String exception = "";
                 try {

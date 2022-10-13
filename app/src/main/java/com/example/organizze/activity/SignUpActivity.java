@@ -46,8 +46,10 @@ public class SignUpActivity extends AppCompatActivity {
             if (!name.getText().toString().isEmpty()) {
                 if (!email.getText().toString().isEmpty()) {
                     if (!password.getText().toString().isEmpty()) {
-                        User user = new User(name.getText().toString(), email.getText().toString(), password.getText().toString());
-                        createUser(user);
+                        String userName = name.getText().toString().trim();
+                        String userEmail = email.getText().toString().trim();
+                        String userPassword = password.getText().toString().trim();
+                        createUser(userName, userEmail, userPassword);
                     } else {
                         Toast.makeText(SignUpActivity.this, "Preencha o campo da senha!", Toast.LENGTH_SHORT).show();
                     }
@@ -67,11 +69,15 @@ public class SignUpActivity extends AppCompatActivity {
         });
     }
 
-    private void createUser(@NonNull User user) {
+    private void createUser(String name, String email, String password) {
         FirebaseAuth auth = FirebaseConfig.GetFirebaseInstance();
-        auth.createUserWithEmailAndPassword(user.email, user.password).addOnCompleteListener(this, task -> {
+        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, task -> {
             if (task.isSuccessful()) {
+                User user = new User(name, email);
+                user.save();
                 Toast.makeText(SignUpActivity.this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, SignInActivity.class));
+                finish();
             } else {
                 String exception = "";
                 try {
