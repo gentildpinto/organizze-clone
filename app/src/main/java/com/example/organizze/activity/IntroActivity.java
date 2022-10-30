@@ -86,7 +86,7 @@ public class IntroActivity extends com.heinrichreimersoftware.materialintro.app.
 
     // Checks if exists authenticated user
     private void checkUser() {
-        FirebaseUser user = FirebaseConfig.GetFirebaseInstance().getCurrentUser();
+        FirebaseUser user = FirebaseConfig.getFirebaseInstance().getCurrentUser();
         if (user != null) {
             startActivity(new Intent(this, MainActivity.class));
             finish();

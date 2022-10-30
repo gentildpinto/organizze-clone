@@ -62,7 +62,7 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     private void login(String email, String password) {
-        FirebaseAuth auth = FirebaseConfig.GetFirebaseInstance();
+        FirebaseAuth auth = FirebaseConfig.getFirebaseInstance();
         auth.signInWithEmailAndPassword(
                 email, password
         ).addOnCompleteListener(this, task -> {
